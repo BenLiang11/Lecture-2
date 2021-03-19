@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MMART-167 Lesson 2</title>
+	<style type="text/css">
+		h1{
+			color:blue;
+		}
+		div{
+			font-size: 30px;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 100px;
+		}
+		h2 {
+			height: 100px;
+			width: 100px;
+			border-radius: 100%;
+			background-color: blue;
+			border: 10px solid orange;
+			font-weight: bold;
+			font-size: 1.5em;
+			text-align: center;
+			vertical-align: middle;
+			color: white;
+			line-height: 100px; 
+			transition: background 0.3s ease;
+		}
+		
+		.parent {
+			background-color:green;
+			height: 100px;
+			width: 200px;
+		}
+		.child {
+			background-color:hsla(0, 50%, 50%);
+			height:100%;
+			width:100%;
+			transition: background 0.3s ease;
+		}
+		
+		.parent:hover .child{
+			background:green;
+		}
+
+		.hover:hover{
+			background: hsla(290, 100%, 50%);
+		}
+		.button3 {
+			background-color:purple;
+			height: 100px;
+			width: 200px;
+			border: 20px solid black;
+		}
+		.button3c {
+			background-color:yellow;
+			height:100%;
+			width:50%;
+			transition: 2s ease-in-out;
+		}
+		.button3:hover .button3c {
+			background-color: pink;
+			color: white;
+			transform: translateX(100%);
+
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Transitions</h1>
+	<div class="parent">
+		<div class="child"> Button 1</div>
+	</div>
+	<h2 class="hover">Button 2</h2>
+	<div class="button3">
+		<div class="button3c">Button3
+		</div>
+	</div>
+	
+
+</body>
+</html>
